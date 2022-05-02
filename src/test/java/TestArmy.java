@@ -1,7 +1,9 @@
 public class TestArmy {
     public TestArmy(){}
 
-    @BeforeEeach
-    public void setUpArmy
+    //@BeforeEeach
+    public void setUpArmy(){
+
+    }
 
 }

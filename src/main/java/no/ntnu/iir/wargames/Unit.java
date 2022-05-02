@@ -15,9 +15,9 @@ public abstract class Unit {
 
 
     public void attackOpponent(Unit opponent) {
-        int damageAndResistence = - (this.attack+this.getAttackBonus()) + (opponent.getArmor()+opponent.getResistBonus();
+        int damageAndResistence = - (this.attack+this.getAttackBonus()) + (opponent.getArmor()+opponent.getResistBonus());
         if (damageAndResistence < 0){
-            int oppponentsNewHealth = opponent.getHealth() + damageAndResistence );
+            int oppponentsNewHealth = opponent.getHealth() + damageAndResistence;
             opponent.setHealth(oppponentsNewHealth);
         }
 
