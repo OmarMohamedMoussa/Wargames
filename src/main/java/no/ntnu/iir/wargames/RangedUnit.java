@@ -1,10 +1,10 @@
 package no.ntnu.iir.wargames;
 
-public class RangedUnits extends Unit {
+public class RangedUnit extends Unit {
     private int numberOfAttackRecived = 0;
 
 
-    public RangedUnits(String name, int health) { super(name, health, 15, 8);}
+    public RangedUnit(String name, int health) { super(name, health, 15, 8);}
 
     /**
      * Returns attack bonus.
