@@ -40,5 +40,10 @@ public class RangedUnit extends Unit {
 
 
         }
+
+    @Override
+    public String getUnitAsString() {
+        return null;
+    }
 }
 

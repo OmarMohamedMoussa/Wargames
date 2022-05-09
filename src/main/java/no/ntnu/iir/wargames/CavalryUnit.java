@@ -28,4 +28,9 @@ public class CavalryUnit extends Unit {
     public int getResistBonus() {
         return 1;
     }
+
+    @Override
+    public String getUnitAsString() {
+        return UnitType.CAVALRY.toString() + "," + getName() + "," + getHealth() + "," + getAttack() + getArmor();
+    }
 }

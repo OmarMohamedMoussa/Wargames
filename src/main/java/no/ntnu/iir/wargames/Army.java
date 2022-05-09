@@ -52,6 +52,10 @@ public class Army {
         );
     }
 
+    public String getArmyName(){
+        return name;
+    }
+
     public String toString() {
         return "Army : " + this.name + ", units : " + this.units.size();
     }

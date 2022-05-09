@@ -16,4 +16,9 @@ public class InfantryUnit extends Unit {
     public int getResistBonus() {
         return 1;
     }
+
+    @Override
+    public String getUnitAsString() {
+        return null;
+    }
 }
