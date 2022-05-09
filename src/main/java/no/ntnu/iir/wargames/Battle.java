@@ -12,6 +12,10 @@ public class Battle {
 
     }
 
+    /**
+     * Simulates a random battle between two armies
+     * @return a battle between two armies
+     */
     public Army simulate() {
         Army firstArmy;
         Army secondArmy;
@@ -47,6 +51,7 @@ public class Battle {
 
 
     }
+
 
     @Override
     public String toString() {

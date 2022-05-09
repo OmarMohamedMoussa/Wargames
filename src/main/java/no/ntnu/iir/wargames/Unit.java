@@ -13,7 +13,10 @@ public abstract class Unit {
         this.armor = armor;
     }
 
-
+    /**
+     * Attacks opponent
+     * @param opponent attack move
+     */
     public void attackOpponent(Unit opponent) {
         int damageAndResistance = - (this.attack+this.getAttackBonus()) + (opponent.getArmor()+opponent.getResistBonus());
         if (damageAndResistance < 0){

@@ -6,6 +6,11 @@ public class CommanderUnit extends CavalryUnit {
         super(name, health, attack, armor);
     }
 
+    /**
+     *
+     * @param name
+     * @param health
+     */
     public CommanderUnit(String name, int health) {
         super(name, health, 25, 15);
     }
