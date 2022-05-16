@@ -16,9 +16,10 @@ public class ArmyFile {
         try (BufferedReader reader = new BufferedReader(new FileReader( armyName + ".csv"))){
             String line;
             while ((line= reader.readLine()) !=null) {
-                String[] unitAsSplitString = line.split(",");
+                String[] unitAsSplitString = line.split(", ");
                 if (unitAsSplitString.length > 1){
-                    System.out.println(unitAsSplitString[1]);
+                    System.out.println(line);
+                    //System.out.println(unitAsSplitString[1]);
                 } else {
                     System.out.println("The armys name is : " + unitAsSplitString[0]);
                 }

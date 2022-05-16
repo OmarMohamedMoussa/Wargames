@@ -52,7 +52,10 @@ public class Battle {
 
     }
 
-
+    /**
+     * Return the amount of units in each army
+     * @return
+     */
     @Override
     public String toString() {
         return "Battle{" +
