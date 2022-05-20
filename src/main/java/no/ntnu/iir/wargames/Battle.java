@@ -3,17 +3,19 @@ package no.ntnu.iir.wargames;
 import java.util.Random;
 
 public class Battle {
+    private Terrain terrain;
     private Army armyOne;
     private Army armyTwo;
 
-    public Battle(Army armyOne, Army armyTwo) {
+    public Battle(Terrain terrain,Army armyOne, Army armyTwo) {
+        this.terrain = terrain;
         this.armyOne = armyOne;
         this.armyTwo = armyTwo;
 
     }
 
     /**
-     * Simulates a random battle between two armies
+     * Simulates a battle between two armies, where it is random who attack first
      * @return a battle between two armies
      */
     public Army simulate() {
@@ -63,5 +65,11 @@ public class Battle {
                 ", armyTwo=" + armyTwo +
                 '}';
     }
+
+    public Terrain getTerrain(){
+        return terrain;
+    }
+
+
 }
 

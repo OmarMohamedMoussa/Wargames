@@ -7,7 +7,7 @@ public class CommanderUnit extends CavalryUnit {
     }
 
     /**
-     *
+     * Creates an objekt of commander unit with different parameters
      * @param name
      * @param health
      */
@@ -15,5 +15,21 @@ public class CommanderUnit extends CavalryUnit {
         super(name, health, 25, 15);
     }
 
+    /**
+     * Shows attack bonus for Commander unit
+     * @return attack bonus for commander unit
+     */
+    @Override
+    public int getAttackBonus() {
+        return super.getAttackBonus();
+    }
 
+    /**
+     * Shows resist bonus for commander unit
+     * @return resist bonus for commander unit
+     */
+    @Override
+    public int getResistBonus() {
+        return super.getResistBonus();
+    }
 }

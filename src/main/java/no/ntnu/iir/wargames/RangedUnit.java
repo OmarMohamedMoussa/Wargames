@@ -2,9 +2,14 @@ package no.ntnu.iir.wargames;
 
 public class RangedUnit extends Unit {
     private int numberOfAttackRecived = 0;
+    private Terrain terrain;
 
 
     public RangedUnit(String name, int health) { super(name, health, 15, 8);}
+    public RangedUnit(String name, int health,Terrain terrain) {
+        super(name,health,15,10);
+        this.terrain = terrain;
+    }
 
     /**
      * Returns attack bonus.
@@ -13,7 +18,11 @@ public class RangedUnit extends Unit {
      */
     @Override
     public int getAttackBonus() {
-        return 3;
+        if(terrain == Terrain.FOREST){
+            return 2;
+        }else{
+            return 3;
+        }
     }
 
 
@@ -40,6 +49,7 @@ public class RangedUnit extends Unit {
 
 
         }
+
 
     @Override
     public String getUnitAsString() {
