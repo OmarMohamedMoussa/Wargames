@@ -1,5 +1,8 @@
 package no.ntnu.iir.wargames;
 
+/**
+ * This class creates an object of commander unit
+ */
 public class CommanderUnit extends CavalryUnit {
 
     public CommanderUnit(String name, int health, int attack, int armor) {

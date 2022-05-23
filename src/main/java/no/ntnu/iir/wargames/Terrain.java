@@ -2,10 +2,17 @@ package no.ntnu.iir.wargames;
 
 // import static no.ntnu.iir.wargames.Terrain.Terrains.*;
 
+/**
+ * This class contain constants of terrain
+ */
 public enum Terrain {
     FOREST, HILL, PLAIN,
     }
 
+
+///**
+// * Trying to create a random terrain mode
+// */
 /*
     private Terrains currentTerrain;
 

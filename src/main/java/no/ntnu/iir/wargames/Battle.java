@@ -2,12 +2,15 @@ package no.ntnu.iir.wargames;
 
 import java.util.Random;
 
+/**
+ * This class chooses terrain and then simulates a battle between two armies
+ */
 public class Battle {
     private Terrain terrain;
     private Army armyOne;
     private Army armyTwo;
 
-    public Battle(Terrain terrain,Army armyOne, Army armyTwo) {
+    public Battle(Terrain terrain, Army armyOne, Army armyTwo) {
         this.terrain = terrain;
         this.armyOne = armyOne;
         this.armyTwo = armyTwo;
@@ -16,13 +19,14 @@ public class Battle {
 
     /**
      * Simulates a battle between two armies, where it is random who attack first
+     *
      * @return a battle between two armies
      */
     public Army simulate() {
         Army firstArmy;
         Army secondArmy;
         Random r = new Random();
-        if(r.nextInt(2) == 0) {
+        if (r.nextInt(2) == 0) {
             firstArmy = armyOne;
             secondArmy = armyTwo;
         } else {
@@ -39,7 +43,7 @@ public class Battle {
                 secondArmy.remove(randomUnitTwo);
             } else {
                 randomUnitTwo.attackOpponent(randomUnitOne);
-                if (randomUnitOne.getHealth() <=0)
+                if (randomUnitOne.getHealth() <= 0)
                     firstArmy.remove(randomUnitOne);
             }
 
@@ -56,6 +60,7 @@ public class Battle {
 
     /**
      * Return the amount of units in each army
+     *
      * @return
      */
     @Override
@@ -66,9 +71,13 @@ public class Battle {
                 '}';
     }
 
-    public Terrain getTerrain(){
+    public Terrain getTerrain() {
         return terrain;
     }
+
+    // public Terrain getRandomTerrain()
+    //  return randomTerrain;
+    //   }
 
 
 }

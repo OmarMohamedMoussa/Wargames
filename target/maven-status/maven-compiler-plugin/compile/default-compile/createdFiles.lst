@@ -1,2 +1,16 @@
+no\ntnu\iir\wargames\Unit.class
+no\ntnu\iir\wargames\InfantryUnit.class
 no\ntnu\iir\wargames\Army.class
+no\ntnu\iir\wargames\ChooseBattlefieldController.class
+no\ntnu\iir\wargames\CommanderUnit.class
+no\ntnu\iir\wargames\RangedUnit.class
+no\ntnu\iir\wargames\UnitFactory.class
+no\ntnu\iir\wargames\GUI.class
+no\ntnu\iir\wargames\ArmyFile.class
+module-info.class
 no\ntnu\iir\wargames\Battle.class
+no\ntnu\iir\wargames\StartController.class
+no\ntnu\iir\wargames\Terrain.class
+no\ntnu\iir\wargames\CavalryUnit.class
+no\ntnu\iir\wargames\UnitFactory$1.class
+no\ntnu\iir\wargames\UnitType.class

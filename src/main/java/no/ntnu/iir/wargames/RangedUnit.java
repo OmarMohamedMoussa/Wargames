@@ -4,7 +4,11 @@ public class RangedUnit extends Unit {
     private int numberOfAttackRecived = 0;
     private Terrain terrain;
 
-
+    /**
+     * Creates an object of ranged units
+     * @param name
+     * @param health
+     */
     public RangedUnit(String name, int health) { super(name, health, 15, 8);}
     public RangedUnit(String name, int health,Terrain terrain) {
         super(name,health,15,10);
@@ -12,7 +16,7 @@ public class RangedUnit extends Unit {
     }
 
     /**
-     * Returns attack bonus.
+     * Returns attack bonus for ranged unit
      *
      * @return attack bonus
      */
@@ -27,7 +31,7 @@ public class RangedUnit extends Unit {
 
 
     /**
-     *Returns the amount of resist bonus.
+     *Returns the resist bonus for ranged unit
      *
      * @return resist bonus
      */

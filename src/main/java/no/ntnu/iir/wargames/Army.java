@@ -5,10 +5,14 @@ import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
 
+/**
+ * This class creates an army that contains units
+ */
 public class Army {
     private String name;
     private ArrayList<Unit>units;
     private Random random;
+
 
 
     public Army(String name){

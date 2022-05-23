@@ -1,7 +1,15 @@
-C:\Wargames\src\main\java\no\ntnu\iir\wargames\RangedUnits.java
+C:\Wargames\src\main\java\no\ntnu\iir\wargames\UnitType.java
 C:\Wargames\src\main\java\no\ntnu\iir\wargames\CavalryUnit.java
 C:\Wargames\src\main\java\no\ntnu\iir\wargames\Unit.java
 C:\Wargames\src\main\java\no\ntnu\iir\wargames\Battle.java
+C:\Wargames\src\main\java\no\ntnu\iir\wargames\ArmyFile.java
 C:\Wargames\src\main\java\no\ntnu\iir\wargames\InfantryUnit.java
-C:\Wargames\src\main\java\no\ntnu\iir\wargames\Army.java
 C:\Wargames\src\main\java\no\ntnu\iir\wargames\CommanderUnit.java
+C:\Wargames\src\main\java\no\ntnu\iir\wargames\ChooseBattlefieldController.java
+C:\Wargames\src\main\java\no\ntnu\iir\wargames\UnitFactory.java
+C:\Wargames\src\main\java\no\ntnu\iir\wargames\RangedUnit.java
+C:\Wargames\src\main\java\no\ntnu\iir\wargames\Army.java
+C:\Wargames\src\main\java\module-info.java
+C:\Wargames\src\main\java\no\ntnu\iir\wargames\GUI.java
+C:\Wargames\src\main\java\no\ntnu\iir\wargames\StartController.java
+C:\Wargames\src\main\java\no\ntnu\iir\wargames\Terrain.java

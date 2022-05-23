@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="no.ntnu.iir.wargames.StartController">
+   <center>
+      <Button fx:id="playbutton" mnemonicParsing="false" prefHeight="65.0" prefWidth="115.0" text="Play" BorderPane.alignment="CENTER" onAction="#switchToScene1">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Button>
+   </center>
+   <top>
+      <ImageView fitHeight="312.0" fitWidth="616.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@images/AKG913145.jpg" />
+         </image>
+      </ImageView>
+   </top>
+</BorderPane>

@@ -6,6 +6,9 @@ import java.nio.Buffer;
 import java.nio.file.Path;
 import java.util.List;
 
+/**
+ * This class writes and reads files. This is made for saving progress.
+ */
 public class ArmyFile {
     public static void main(String[] args) throws URISyntaxException, IOException {
         fileReader("suicide squad");

@@ -1,5 +1,9 @@
 package no.ntnu.iir.wargames;
 
+
+/**
+ * Abstract class unit
+ */
 public abstract class Unit {
     private String name;
     private int health;
@@ -14,7 +18,7 @@ public abstract class Unit {
     }
 
     /**
-     * Attacks opponent
+     * This shows the attack methodes for unit
      * @param opponent attack move
      */
     public void attackOpponent(Unit opponent) {
