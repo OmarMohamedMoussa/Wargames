@@ -53,4 +53,23 @@ public class InfantryUnitTest {
 //
 //
 //    }
+
+    @Test
+    void testInfantryUnitAttackAndResistBonusNegative() {
+        try {
+            InfantryUnit infantryUnit = new InfantryUnit("Lars", 10);
+            assertEquals(2, infantryUnit.getAttackBonus());
+            assertEquals(1, infantryUnit.getResistBonus());
+
+            assertNotEquals(3,infantryUnit.getAttackBonus());
+            assertNotEquals(2,infantryUnit.getResistBonus());
+
+        } catch (Exception e) {
+            System.out.println(("Positive test:"));
+            e.printStackTrace();
+        }
+    }
+
+
 }
+

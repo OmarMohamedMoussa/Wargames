@@ -54,17 +54,31 @@ public class CavalryUnitTest {
         }
 
         }
+
+
+    @Test
+    void testCavalryUnitAttackAndResistBonusNegative() {
+        try{
+            CavalryUnit cavalryUnit = new CavalryUnit("Omar",2,2,2);
+            assertEquals(1,cavalryUnit.getResistBonus());
+            assertEquals(6,cavalryUnit.getAttackBonus());
+            assertEquals(2,cavalryUnit.getAttackBonus());
+            assertEquals(2,cavalryUnit.getAttackBonus());
+
+            assertNotEquals(4,cavalryUnit.getResistBonus());
+            assertNotEquals(4,cavalryUnit.getAttack());
+            assertNotEquals(3,cavalryUnit.getAttack());
+            assertNotEquals(3,cavalryUnit.getAttack());
+        } catch (Exception e) {
+            System.out.println("Negative test:");
+            e.printStackTrace();
+        }
+
     }
 
+}
 
 
-
-/*    @Test
-    Void testNegativeInputsForCavalryUnit() {
-        try{
-            new CavalryUnit("Omar",23,2);
-        }
-    }*/
 
 
 

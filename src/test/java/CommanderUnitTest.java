@@ -54,5 +54,29 @@ public class CommanderUnitTest {
         }
 
     }
+
+    @Test
+    void testCommanderUnitAttackAndResistBonusNegative() {
+        try {
+            CommanderUnit commanderUnit = new CommanderUnit("Stig", 20, 10, 5);
+            assertEquals(1, commanderUnit.getResistBonus());
+            assertEquals(6, commanderUnit.getAttackBonus());
+            assertEquals(2, commanderUnit.getAttackBonus());
+            assertEquals(2, commanderUnit.getAttackBonus());
+
+            assertNotEquals(4,commanderUnit.getResistBonus());
+            assertNotEquals(4,commanderUnit.getAttack());
+            assertNotEquals(3,commanderUnit.getAttack());
+            assertNotEquals(3,commanderUnit.getAttack());
+
+        } catch (Exception e) {
+            System.out.println("Negative test:");
+            e.printStackTrace();
+        }
+    }
+
+
+
+
 }
 

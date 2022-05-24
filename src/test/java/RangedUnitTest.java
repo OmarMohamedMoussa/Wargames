@@ -56,5 +56,22 @@ public class RangedUnitTest {
             }
 
 
+    @Test
+    void rangeUnitAttackAndResistBonusNegative(){
+        try {
+            RangedUnit rangedUnit = new RangedUnit("Astrid", 5);
+            assertEquals(3, rangedUnit.getAttackBonus());
+            assertEquals(6,rangedUnit.getResistBonus());
+
+            assertNotEquals(2, rangedUnit.getAttackBonus());
+            assertNotEquals(8,rangedUnit.getResistBonus());
+
+        } catch (Exception e) {
+            System.out.println("Negative test:");
+            e.printStackTrace();
+        }
+    }
+
+
 
 }
